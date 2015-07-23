@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF9C349E1B6078B300948A72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C349D1B6078B300948A72 /* main.m */; };
+		EF9C34A11B6078B300948A72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34A01B6078B300948A72 /* AppDelegate.m */; };
+		EF9C34A91B6078B300948A72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9C34A81B6078B300948A72 /* Images.xcassets */; };
+		EF9C34AC1B6078B300948A72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9C34AA1B6078B300948A72 /* LaunchScreen.xib */; };
+		EF9C34B81B6078B400948A72 /* ItunesDataLoadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34B71B6078B400948A72 /* ItunesDataLoadingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF9C34B21B6078B400948A72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF9C34901B6078B300948A72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF9C34971B6078B300948A72;
+			remoteInfo = ItunesDataLoading;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF9C34981B6078B300948A72 /* ItunesDataLoading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesDataLoading.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9C349C1B6078B300948A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF9C349D1B6078B300948A72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF9C349F1B6078B300948A72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF9C34A01B6078B300948A72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF9C34A81B6078B300948A72 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF9C34AB1B6078B300948A72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EF9C34B11B6078B400948A72 /* ItunesDataLoadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesDataLoadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9C34B61B6078B400948A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF9C34B71B6078B400948A72 /* ItunesDataLoadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItunesDataLoadingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF9C34951B6078B300948A72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9C34AE1B6078B400948A72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF9C348F1B6078B300948A72 = {
+			isa = PBXGroup;
+			children = (
+				EF9C349A1B6078B300948A72 /* ItunesDataLoading */,
+				EF9C34B41B6078B400948A72 /* ItunesDataLoadingTests */,
+				EF9C34991B6078B300948A72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF9C34991B6078B300948A72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C34981B6078B300948A72 /* ItunesDataLoading.app */,
+				EF9C34B11B6078B400948A72 /* ItunesDataLoadingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF9C349A1B6078B300948A72 /* ItunesDataLoading */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C34C51B60791000948A72 /* AppDelegate/Resources */,
+				EF9C34C11B6078E100948A72 /* Classes */,
+				EF9C349B1B6078B300948A72 /* Supporting Files */,
+			);
+			path = ItunesDataLoading;
+			sourceTree = "<group>";
+		};
+		EF9C349B1B6078B300948A72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C349C1B6078B300948A72 /* Info.plist */,
+				EF9C349D1B6078B300948A72 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF9C34B41B6078B400948A72 /* ItunesDataLoadingTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C34B71B6078B400948A72 /* ItunesDataLoadingTests.m */,
+				EF9C34B51B6078B400948A72 /* Supporting Files */,
+			);
+			path = ItunesDataLoadingTests;
+			sourceTree = "<group>";
+		};
+		EF9C34B51B6078B400948A72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C34B61B6078B400948A72 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF9C34C11B6078E100948A72 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C34C21B6078E600948A72 /* Model */,
+				EF9C34C31B6078EC00948A72 /* View */,
+				EF9C34C41B6078F700948A72 /* Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		EF9C34C21B6078E600948A72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EF9C34C31B6078EC00948A72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EF9C34C41B6078F700948A72 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EF9C34C51B60791000948A72 /* AppDelegate/Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C349F1B6078B300948A72 /* AppDelegate.h */,
+				EF9C34A01B6078B300948A72 /* AppDelegate.m */,
+				EF9C34A81B6078B300948A72 /* Images.xcassets */,
+				EF9C34AA1B6078B300948A72 /* LaunchScreen.xib */,
+			);
+			name = AppDelegate/Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF9C34971B6078B300948A72 /* ItunesDataLoading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9C34BB1B6078B400948A72 /* Build configuration list for PBXNativeTarget "ItunesDataLoading" */;
+			buildPhases = (
+				EF9C34941B6078B300948A72 /* Sources */,
+				EF9C34951B6078B300948A72 /* Frameworks */,
+				EF9C34961B6078B300948A72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ItunesDataLoading;
+			productName = ItunesDataLoading;
+			productReference = EF9C34981B6078B300948A72 /* ItunesDataLoading.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF9C34B01B6078B400948A72 /* ItunesDataLoadingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9C34BE1B6078B400948A72 /* Build configuration list for PBXNativeTarget "ItunesDataLoadingTests" */;
+			buildPhases = (
+				EF9C34AD1B6078B400948A72 /* Sources */,
+				EF9C34AE1B6078B400948A72 /* Frameworks */,
+				EF9C34AF1B6078B400948A72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF9C34B31B6078B400948A72 /* PBXTargetDependency */,
+			);
+			name = ItunesDataLoadingTests;
+			productName = ItunesDataLoadingTests;
+			productReference = EF9C34B11B6078B400948A72 /* ItunesDataLoadingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF9C34901B6078B300948A72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Юрий Воскресенский";
+				TargetAttributes = {
+					EF9C34971B6078B300948A72 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					EF9C34B01B6078B400948A72 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = EF9C34971B6078B300948A72;
+					};
+				};
+			};
+			buildConfigurationList = EF9C34931B6078B300948A72 /* Build configuration list for PBXProject "ItunesDataLoading" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF9C348F1B6078B300948A72;
+			productRefGroup = EF9C34991B6078B300948A72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF9C34971B6078B300948A72 /* ItunesDataLoading */,
+				EF9C34B01B6078B400948A72 /* ItunesDataLoadingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF9C34961B6078B300948A72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9C34AC1B6078B300948A72 /* LaunchScreen.xib in Resources */,
+				EF9C34A91B6078B300948A72 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9C34AF1B6078B400948A72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF9C34941B6078B300948A72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9C34A11B6078B300948A72 /* AppDelegate.m in Sources */,
+				EF9C349E1B6078B300948A72 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9C34AD1B6078B400948A72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9C34B81B6078B400948A72 /* ItunesDataLoadingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF9C34B31B6078B400948A72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF9C34971B6078B300948A72 /* ItunesDataLoading */;
+			targetProxy = EF9C34B21B6078B400948A72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF9C34AA1B6078B300948A72 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF9C34AB1B6078B300948A72 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF9C34B91B6078B400948A72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF9C34BA1B6078B400948A72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF9C34BC1B6078B400948A72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ItunesDataLoading/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF9C34BD1B6078B400948A72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ItunesDataLoading/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF9C34BF1B6078B400948A72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ItunesDataLoadingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItunesDataLoading.app/ItunesDataLoading";
+			};
+			name = Debug;
+		};
+		EF9C34C01B6078B400948A72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ItunesDataLoadingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItunesDataLoading.app/ItunesDataLoading";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF9C34931B6078B300948A72 /* Build configuration list for PBXProject "ItunesDataLoading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9C34B91B6078B400948A72 /* Debug */,
+				EF9C34BA1B6078B400948A72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9C34BB1B6078B400948A72 /* Build configuration list for PBXNativeTarget "ItunesDataLoading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9C34BC1B6078B400948A72 /* Debug */,
+				EF9C34BD1B6078B400948A72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF9C34BE1B6078B400948A72 /* Build configuration list for PBXNativeTarget "ItunesDataLoadingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9C34BF1B6078B400948A72 /* Debug */,
+				EF9C34C01B6078B400948A72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF9C34901B6078B300948A72 /* Project object */;
+}
