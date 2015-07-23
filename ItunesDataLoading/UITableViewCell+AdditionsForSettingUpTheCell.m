@@ -7,6 +7,7 @@
 //
 
 #import "UITableViewCell+AdditionsForSettingUpTheCell.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @implementation UITableViewCell (AdditionsForSettingUpTheCell)
 
@@ -14,6 +15,7 @@
 {
     self.textLabel.text = model.songName;
     self.detailTextLabel.text = model.artistName;
+    [self.imageView setImageWithURL:model.imageURL];
 }
 
 @end
