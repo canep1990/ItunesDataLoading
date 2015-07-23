@@ -15,7 +15,12 @@
 {
     self.textLabel.text = model.songName;
     self.detailTextLabel.text = model.artistName;
-    [self.imageView setImageWithURL:model.imageURL];
+    __weak UITableViewCell *weakCell = self;
+    [self.imageView setImageWithURLRequest:[NSURLRequest requestWithURL:model.imageURL] placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
+    {
+        weakCell.imageView.image = image;
+        [weakCell setNeedsLayout];
+    } failure:nil];
 }
 
 @end
