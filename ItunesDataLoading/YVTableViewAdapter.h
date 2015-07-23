@@ -9,17 +9,7 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
-@protocol YVTableViewAdapterDelegate <NSObject>
-
-- (void)displayLoadingView;
-
-- (void)loadMoreData;
-
-@end
-
 @interface YVTableViewAdapter : NSObject
-
-@property (weak, nonatomic) id <YVTableViewAdapterDelegate> delegate;
 
 @property (copy, nonatomic) NSArray *loadedItunesModelsArray;
 

@@ -4,7 +4,7 @@
 target 'ItunesDataLoading' do
 pod 'AFNetworking'
 pod 'MBProgressHUD'
-
+pod 'SVPullToRefresh'
 end
 
 target 'ItunesDataLoadingTests' do

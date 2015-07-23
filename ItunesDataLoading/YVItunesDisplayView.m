@@ -8,9 +8,9 @@
 
 #import "YVItunesDisplayView.h"
 #import <MBProgressHUD/MBProgressHUD.h>
-#import "YVTableFooterView.h"
+#import <SVPullToRefresh/SVPullToRefresh.h>
 
-@interface YVItunesDisplayView () <YVTableViewAdapterDelegate>
+@interface YVItunesDisplayView ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet YVTableViewAdapter *tableAdapter;
@@ -21,26 +21,17 @@
 
 - (void)awakeFromNib
 {
-    self.tableAdapter.delegate = self;
-    YVTableFooterView *footerView = [[YVTableFooterView alloc] init];
-    [MBProgressHUD showHUDAddedTo:footerView animated:YES];
-    self.tableView.tableFooterView = footerView;
-    self.tableView.tableFooterView.hidden = YES;
-    self.tableView.tableFooterView.alpha = 0.0f;
+    __weak YVItunesDisplayView *weakSelf = self;
+    [self.tableView addInfiniteScrollingWithActionHandler:^{
+        [weakSelf loadMoreData];
+    }];
 }
 
 - (void)updateTableViewWithLoadedData:(NSArray *)loadedData
 {
-    self.tableView.tableFooterView.hidden = YES;
-    self.tableView.tableFooterView.alpha = 0.0f;
     self.tableAdapter.loadedItunesModelsArray = loadedData;
     [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
-
-- (void)displayLoadingView
-{
-    self.tableView.tableFooterView.hidden = NO;
-    self.tableView.tableFooterView.alpha = 1.0f;
+    [self.tableView.infiniteScrollingView stopAnimating];
 }
 
 - (void)loadMoreData

@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-ItunesDataLoading-SVPullToRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ItunesDataLoading.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0BF41ACCD646C163490B7DC8</key>
+		<key>3D26F2AF21FBD8067F6C1E26</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AC0B94645D2B5BF7386DB1FB</key>
+		<key>65E317CA091AE9AEAB1F43AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AFAA6A879BBB2CE1721C88F7</key>
+		<key>6B13E98F040198B953974842</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76B65D0DF7BFF678040DADA5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

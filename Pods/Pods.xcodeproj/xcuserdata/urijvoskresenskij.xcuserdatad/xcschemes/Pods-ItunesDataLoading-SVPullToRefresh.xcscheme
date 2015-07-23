@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "76B65D0DF7BFF678040DADA5"
-               BuildableName = "libPods-ItunesDataLoading.a"
-               BlueprintName = "Pods-ItunesDataLoading"
+               BlueprintIdentifier = "6B13E98F040198B953974842"
+               BuildableName = "libPods-ItunesDataLoading-SVPullToRefresh.a"
+               BlueprintName = "Pods-ItunesDataLoading-SVPullToRefresh"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
