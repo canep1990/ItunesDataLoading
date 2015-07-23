@@ -13,6 +13,12 @@
 		EF9C34A91B6078B300948A72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9C34A81B6078B300948A72 /* Images.xcassets */; };
 		EF9C34AC1B6078B300948A72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9C34AA1B6078B300948A72 /* LaunchScreen.xib */; };
 		EF9C34B81B6078B400948A72 /* ItunesDataLoadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34B71B6078B400948A72 /* ItunesDataLoadingTests.m */; };
+		EF9C34C81B607DF800948A72 /* YVItunesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34C71B607DF800948A72 /* YVItunesModel.m */; };
+		EF9C34CB1B607E4700948A72 /* YVItunesDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34CA1B607E4700948A72 /* YVItunesDisplayViewController.m */; };
+		EF9C34CE1B607E5E00948A72 /* YVItunesDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34CD1B607E5E00948A72 /* YVItunesDisplayView.m */; };
+		EF9C34D01B607EA800948A72 /* YVItunesDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9C34CF1B607EA800948A72 /* YVItunesDisplayView.xib */; };
+		EF9C34D31B607F6C00948A72 /* YVBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34D21B607F6C00948A72 /* YVBaseView.m */; };
+		EF9C34D61B60800100948A72 /* YVTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34D51B60800100948A72 /* YVTableViewAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +45,17 @@
 		EF9C34B11B6078B400948A72 /* ItunesDataLoadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesDataLoadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9C34B61B6078B400948A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF9C34B71B6078B400948A72 /* ItunesDataLoadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItunesDataLoadingTests.m; sourceTree = "<group>"; };
+		EF9C34C61B607DF800948A72 /* YVItunesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVItunesModel.h; sourceTree = "<group>"; };
+		EF9C34C71B607DF800948A72 /* YVItunesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVItunesModel.m; sourceTree = "<group>"; };
+		EF9C34C91B607E4700948A72 /* YVItunesDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVItunesDisplayViewController.h; sourceTree = "<group>"; };
+		EF9C34CA1B607E4700948A72 /* YVItunesDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVItunesDisplayViewController.m; sourceTree = "<group>"; };
+		EF9C34CC1B607E5E00948A72 /* YVItunesDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVItunesDisplayView.h; sourceTree = "<group>"; };
+		EF9C34CD1B607E5E00948A72 /* YVItunesDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVItunesDisplayView.m; sourceTree = "<group>"; };
+		EF9C34CF1B607EA800948A72 /* YVItunesDisplayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVItunesDisplayView.xib; sourceTree = "<group>"; };
+		EF9C34D11B607F6C00948A72 /* YVBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVBaseView.h; sourceTree = "<group>"; };
+		EF9C34D21B607F6C00948A72 /* YVBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVBaseView.m; sourceTree = "<group>"; };
+		EF9C34D41B60800100948A72 /* YVTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVTableViewAdapter.h; sourceTree = "<group>"; };
+		EF9C34D51B60800100948A72 /* YVTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVTableViewAdapter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +163,8 @@
 		EF9C34C21B6078E600948A72 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EF9C34C61B607DF800948A72 /* YVItunesModel.h */,
+				EF9C34C71B607DF800948A72 /* YVItunesModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -153,6 +172,13 @@
 		EF9C34C31B6078EC00948A72 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF9C34D11B607F6C00948A72 /* YVBaseView.h */,
+				EF9C34D21B607F6C00948A72 /* YVBaseView.m */,
+				EF9C34CC1B607E5E00948A72 /* YVItunesDisplayView.h */,
+				EF9C34CD1B607E5E00948A72 /* YVItunesDisplayView.m */,
+				EF9C34CF1B607EA800948A72 /* YVItunesDisplayView.xib */,
+				EF9C34D41B60800100948A72 /* YVTableViewAdapter.h */,
+				EF9C34D51B60800100948A72 /* YVTableViewAdapter.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -160,6 +186,8 @@
 		EF9C34C41B6078F700948A72 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EF9C34C91B607E4700948A72 /* YVItunesDisplayViewController.h */,
+				EF9C34CA1B607E4700948A72 /* YVItunesDisplayViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -258,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF9C34AC1B6078B300948A72 /* LaunchScreen.xib in Resources */,
+				EF9C34D01B607EA800948A72 /* YVItunesDisplayView.xib in Resources */,
 				EF9C34A91B6078B300948A72 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +339,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF9C34A11B6078B300948A72 /* AppDelegate.m in Sources */,
+				EF9C34C81B607DF800948A72 /* YVItunesModel.m in Sources */,
+				EF9C34CB1B607E4700948A72 /* YVItunesDisplayViewController.m in Sources */,
+				EF9C34CE1B607E5E00948A72 /* YVItunesDisplayView.m in Sources */,
+				EF9C34D31B607F6C00948A72 /* YVBaseView.m in Sources */,
+				EF9C34D61B60800100948A72 /* YVTableViewAdapter.m in Sources */,
 				EF9C349E1B6078B300948A72 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
