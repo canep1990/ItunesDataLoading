@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+/** Custom model class for getting needed data from itunes */
 @interface YVItunesModel : NSObject
+
+// Properties for displaying data
 
 @property (strong, nonatomic) NSURL *imageURL;
 @property (copy, nonatomic) NSString *songName;
 @property (copy, nonatomic) NSString *artistName;
 
+/** Create itune model from dictionary */
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 
 @end

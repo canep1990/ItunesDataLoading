@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
+/** Adapter class for table view */
 @interface YVTableViewAdapter : NSObject
 
+/** Property for newly loaded array */
 @property (copy, nonatomic) NSArray *loadedItunesModelsArray;
 
 @end

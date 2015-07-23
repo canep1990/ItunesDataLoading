@@ -11,6 +11,7 @@
 
 @interface UITableViewCell (AdditionsForSettingUpTheCell)
 
+/** Helper method for configuring cells */
 - (void)configureCell:(YVItunesModel *)model;
 
 @end

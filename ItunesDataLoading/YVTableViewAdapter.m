@@ -24,7 +24,6 @@ static NSString *const kTableViewReuseIdentifier = @"ReuseIdentifier";
     if (self = [super init])
     {
         self.displayArray = [[NSMutableArray alloc] init];
-        
     }
     return self;
 }
