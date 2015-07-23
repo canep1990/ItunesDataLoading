@@ -11,15 +11,11 @@
 @interface YVItunesDisplayView ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet YVTableViewAdapter *tableAdapter;
 
 @end
 
 @implementation YVItunesDisplayView
-
-- (void)awakeFromNib
-{
-    
-}
 
 - (void)updateTableViewWithLoadedData:(NSArray *)loadedData
 {

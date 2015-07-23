@@ -20,6 +20,7 @@
 		EF9C34D31B607F6C00948A72 /* YVBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34D21B607F6C00948A72 /* YVBaseView.m */; };
 		EF9C34D61B60800100948A72 /* YVTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34D51B60800100948A72 /* YVTableViewAdapter.m */; };
 		EF9C34DC1B6089E700948A72 /* UITableViewCell+AdditionsForSettingUpTheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34DB1B6089E700948A72 /* UITableViewCell+AdditionsForSettingUpTheCell.m */; };
+		EF9C34DF1B608C1100948A72 /* YVItunesSongsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34DE1B608C1100948A72 /* YVItunesSongsLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		EF9C34D51B60800100948A72 /* YVTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVTableViewAdapter.m; sourceTree = "<group>"; };
 		EF9C34DA1B6089E700948A72 /* UITableViewCell+AdditionsForSettingUpTheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+AdditionsForSettingUpTheCell.h"; sourceTree = "<group>"; };
 		EF9C34DB1B6089E700948A72 /* UITableViewCell+AdditionsForSettingUpTheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+AdditionsForSettingUpTheCell.m"; sourceTree = "<group>"; };
+		EF9C34DD1B608C1100948A72 /* YVItunesSongsLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVItunesSongsLoader.h; sourceTree = "<group>"; };
+		EF9C34DE1B608C1100948A72 /* YVItunesSongsLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVItunesSongsLoader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,8 @@
 			children = (
 				EF9C34C61B607DF800948A72 /* YVItunesModel.h */,
 				EF9C34C71B607DF800948A72 /* YVItunesModel.m */,
+				EF9C34DD1B608C1100948A72 /* YVItunesSongsLoader.h */,
+				EF9C34DE1B608C1100948A72 /* YVItunesSongsLoader.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 				EF9C34C81B607DF800948A72 /* YVItunesModel.m in Sources */,
 				EF9C34CB1B607E4700948A72 /* YVItunesDisplayViewController.m in Sources */,
 				EF9C34CE1B607E5E00948A72 /* YVItunesDisplayView.m in Sources */,
+				EF9C34DF1B608C1100948A72 /* YVItunesSongsLoader.m in Sources */,
 				EF9C34D31B607F6C00948A72 /* YVBaseView.m in Sources */,
 				EF9C34D61B60800100948A72 /* YVTableViewAdapter.m in Sources */,
 				EF9C349E1B6078B300948A72 /* main.m in Sources */,

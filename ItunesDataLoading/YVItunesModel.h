@@ -14,4 +14,6 @@
 @property (copy, nonatomic) NSString *songName;
 @property (copy, nonatomic) NSString *artistName;
 
+- (instancetype)initWithDictionary:(NSDictionary *)dict;
+
 @end
