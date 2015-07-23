@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol YVItunesSongsLoaderDelegate
+@protocol YVItunesSongsLoaderDelegate <NSObject>
 
 - (void)didLoadDataArray:(NSArray *)array;
 - (void)didFailToLoadData:(NSString *)error;

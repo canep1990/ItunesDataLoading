@@ -24,6 +24,7 @@ static NSString *const kTableViewReuseIdentifier = @"ReuseIdentifier";
     if (self = [super init])
     {
         self.displayArray = [[NSMutableArray alloc] init];
+        
     }
     return self;
 }
@@ -55,6 +56,24 @@ static NSString *const kTableViewReuseIdentifier = @"ReuseIdentifier";
     YVItunesModel *model = [self.displayArray objectAtIndex:indexPath.row];
     [cell configureCell:model];
     return cell;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (([scrollView contentOffset].y + scrollView.frame.size.height) >= [scrollView contentSize].height)
+    {
+        [UIView animateWithDuration:1.0f delay:0 options:0 animations:^{
+            if (self.delegate)
+            {
+                [self.delegate displayLoadingView];
+            }
+        } completion:^(BOOL finished) {
+            if (self.delegate)
+            {
+                [self.delegate loadMoreData];
+            }
+        }];
+    }
 }
 
 @end

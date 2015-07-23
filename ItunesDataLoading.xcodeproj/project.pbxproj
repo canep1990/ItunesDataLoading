@@ -21,6 +21,8 @@
 		EF9C34D61B60800100948A72 /* YVTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34D51B60800100948A72 /* YVTableViewAdapter.m */; };
 		EF9C34DC1B6089E700948A72 /* UITableViewCell+AdditionsForSettingUpTheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34DB1B6089E700948A72 /* UITableViewCell+AdditionsForSettingUpTheCell.m */; };
 		EF9C34DF1B608C1100948A72 /* YVItunesSongsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C34DE1B608C1100948A72 /* YVItunesSongsLoader.m */; };
+		EFEAD7A81B60CD7B00C0A8E2 /* YVTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEAD7A71B60CD7A00C0A8E2 /* YVTableFooterView.m */; };
+		EFEAD7AA1B60CD8600C0A8E2 /* YVTableFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFEAD7A91B60CD8600C0A8E2 /* YVTableFooterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		EF9C34DB1B6089E700948A72 /* UITableViewCell+AdditionsForSettingUpTheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+AdditionsForSettingUpTheCell.m"; sourceTree = "<group>"; };
 		EF9C34DD1B608C1100948A72 /* YVItunesSongsLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVItunesSongsLoader.h; sourceTree = "<group>"; };
 		EF9C34DE1B608C1100948A72 /* YVItunesSongsLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVItunesSongsLoader.m; sourceTree = "<group>"; };
+		EFEAD7A61B60CD7A00C0A8E2 /* YVTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVTableFooterView.h; sourceTree = "<group>"; };
+		EFEAD7A71B60CD7A00C0A8E2 /* YVTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVTableFooterView.m; sourceTree = "<group>"; };
+		EFEAD7A91B60CD8600C0A8E2 /* YVTableFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVTableFooterView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +187,9 @@
 			children = (
 				EF9C34D11B607F6C00948A72 /* YVBaseView.h */,
 				EF9C34D21B607F6C00948A72 /* YVBaseView.m */,
+				EFEAD7A61B60CD7A00C0A8E2 /* YVTableFooterView.h */,
+				EFEAD7A71B60CD7A00C0A8E2 /* YVTableFooterView.m */,
+				EFEAD7A91B60CD8600C0A8E2 /* YVTableFooterView.xib */,
 				EF9C34CC1B607E5E00948A72 /* YVItunesDisplayView.h */,
 				EF9C34CD1B607E5E00948A72 /* YVItunesDisplayView.m */,
 				EF9C34CF1B607EA800948A72 /* YVItunesDisplayView.xib */,
@@ -298,6 +306,7 @@
 				EF9C34AC1B6078B300948A72 /* LaunchScreen.xib in Resources */,
 				EF9C34D01B607EA800948A72 /* YVItunesDisplayView.xib in Resources */,
 				EF9C34A91B6078B300948A72 /* Images.xcassets in Resources */,
+				EFEAD7AA1B60CD8600C0A8E2 /* YVTableFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +362,7 @@
 				EF9C34CB1B607E4700948A72 /* YVItunesDisplayViewController.m in Sources */,
 				EF9C34CE1B607E5E00948A72 /* YVItunesDisplayView.m in Sources */,
 				EF9C34DF1B608C1100948A72 /* YVItunesSongsLoader.m in Sources */,
+				EFEAD7A81B60CD7B00C0A8E2 /* YVTableFooterView.m in Sources */,
 				EF9C34D31B607F6C00948A72 /* YVBaseView.m in Sources */,
 				EF9C34D61B60800100948A72 /* YVTableViewAdapter.m in Sources */,
 				EF9C349E1B6078B300948A72 /* main.m in Sources */,

@@ -9,10 +9,11 @@
 #import "YVItunesDisplayViewController.h"
 #import "YVItunesDisplayView.h"
 #import "YVItunesSongsLoader.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 NSUInteger const kDefaultDownloadOffset = 20;
 
-@interface YVItunesDisplayViewController () <YVItunesSongsLoaderDelegate>
+@interface YVItunesDisplayViewController () <YVItunesSongsLoaderDelegate, YVItunesDisplayViewDelegate>
 
 @property (strong, nonatomic) YVItunesSongsLoader *loader;
 @property (nonatomic) NSUInteger offsetFactor;
@@ -24,6 +25,7 @@ NSUInteger const kDefaultDownloadOffset = 20;
 - (void)loadView
 {
     YVItunesDisplayView *view = [[YVItunesDisplayView alloc] init];
+    view.delegate = self;
     self.view = view;
 }
 
@@ -38,8 +40,16 @@ NSUInteger const kDefaultDownloadOffset = 20;
 
 - (void)loadData
 {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     NSUInteger offset = kDefaultDownloadOffset * self.offsetFactor;
     [self.loader loadSongsWithOffset:offset];
+}
+
+#pragma mark - YVItunesDisplayViewDelegate
+
+- (void)needsToLoadMoreData
+{
+    [self loadData];
 }
 
 #pragma mark - YVItunesSongsLoaderDelegate
@@ -47,10 +57,12 @@ NSUInteger const kDefaultDownloadOffset = 20;
 - (void)didFailToLoadData:(NSString *)error
 {
     NSLog(@"error: %@", error);
+    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
 }
 
 - (void)didLoadDataArray:(NSArray *)array
 {
+    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
     self.offsetFactor ++;
     YVItunesDisplayView *view = (YVItunesDisplayView *)self.view;
     [view updateTableViewWithLoadedData:array];

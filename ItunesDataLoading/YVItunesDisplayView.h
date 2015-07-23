@@ -10,7 +10,15 @@
 #import "YVBaseView.h"
 #import "YVTableViewAdapter.h"
 
+@protocol YVItunesDisplayViewDelegate <NSObject>
+
+- (void)needsToLoadMoreData;
+
+@end
+
 @interface YVItunesDisplayView : YVBaseView
+
+@property (weak, nonatomic) id <YVItunesDisplayViewDelegate> delegate;
 
 - (void)updateTableViewWithLoadedData:(NSArray *)loadedData;
 
