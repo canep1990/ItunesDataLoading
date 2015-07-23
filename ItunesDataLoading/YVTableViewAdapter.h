@@ -11,4 +11,6 @@
 
 @interface YVTableViewAdapter : NSObject
 
+@property (copy, nonatomic) NSArray *loadedItunesModelsArray;
+
 @end

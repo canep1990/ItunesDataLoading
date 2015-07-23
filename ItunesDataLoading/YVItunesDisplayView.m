@@ -21,4 +21,10 @@
     
 }
 
+- (void)updateTableViewWithLoadedData:(NSArray *)loadedData
+{
+    self.tableAdapter.loadedItunesModelsArray = loadedData;
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
 @end

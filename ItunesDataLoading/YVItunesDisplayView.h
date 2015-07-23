@@ -14,4 +14,6 @@
 
 @property (strong, nonatomic) IBOutlet YVTableViewAdapter *tableAdapter;
 
+- (void)updateTableViewWithLoadedData:(NSArray *)loadedData;
+
 @end

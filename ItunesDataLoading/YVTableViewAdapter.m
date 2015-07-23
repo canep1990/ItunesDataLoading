@@ -7,6 +7,7 @@
 //
 
 #import "YVTableViewAdapter.h"
+#import "UITableViewCell+AdditionsForSettingUpTheCell.h"
 
 static NSString *const kTableViewReuseIdentifier = @"ReuseIdentifier";
 
@@ -25,6 +26,11 @@ static NSString *const kTableViewReuseIdentifier = @"ReuseIdentifier";
         self.displayArray = [[NSMutableArray alloc] init];
     }
     return self;
+}
+
+- (void)setLoadedItunesModelsArray:(NSArray *)loadedItunesModelsArray
+{
+    [self.displayArray addObjectsFromArray:loadedItunesModelsArray];
 }
 
 #pragma mark -  Table view delegate & datasource
@@ -46,6 +52,8 @@ static NSString *const kTableViewReuseIdentifier = @"ReuseIdentifier";
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kTableViewReuseIdentifier];
     }
+    YVItunesModel *model = [self.displayArray objectAtIndex:indexPath.row];
+    [cell configureCell:model];
     return cell;
 }
 

@@ -10,4 +10,8 @@
 
 @interface YVItunesModel : NSObject
 
+@property (strong, nonatomic) NSURL *imageURL;
+@property (copy, nonatomic) NSString *songName;
+@property (copy, nonatomic) NSString *artistName;
+
 @end
