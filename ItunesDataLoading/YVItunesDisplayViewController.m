@@ -58,7 +58,6 @@ static NSString * const kDefaultMessageTitle = @"Ошибка";
 
 - (void)didFailToLoadData:(NSString *)error
 {
-    NSLog(@"error: %@", error);
     [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0)
     {

@@ -24,7 +24,6 @@
     {
         self.loading = YES;
         NSString *urlString = [[NSString stringWithFormat:@"https://itunes.apple.com/search?term=thedoors&country&limit=20&offset=%lu", (unsigned long)offset] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-        NSLog(@"url: %@", urlString);
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSMutableArray *downloadedArray = [[NSMutableArray alloc] init];
