@@ -11,7 +11,9 @@
 #import "YVItunesSongsLoader.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 
+/** Value for default download offset */
 NSUInteger const kDefaultDownloadOffset = 20;
+static NSString * const kDefaultMessageTitle = @"Ошибка";
 
 @interface YVItunesDisplayViewController () <YVItunesSongsLoaderDelegate, YVItunesDisplayViewDelegate>
 
@@ -58,6 +60,18 @@ NSUInteger const kDefaultDownloadOffset = 20;
 {
     NSLog(@"error: %@", error);
     [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0)
+    {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(kDefaultMessageTitle, nil) message:error preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", nil) style:UIAlertActionStyleCancel handler:nil];
+        [alertController addAction:action];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(kDefaultMessageTitle, nil) message:error delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (void)didLoadDataArray:(NSArray *)array

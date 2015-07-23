@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+/** Main controller for displaying itunes data */
 @interface YVItunesDisplayViewController : UIViewController
 
 @end
