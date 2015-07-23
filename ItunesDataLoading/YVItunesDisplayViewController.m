@@ -7,6 +7,7 @@
 //
 
 #import "YVItunesDisplayViewController.h"
+#import "YVItunesDisplayView.h"
 
 @interface YVItunesDisplayViewController ()
 
@@ -14,5 +15,15 @@
 
 @implementation YVItunesDisplayViewController
 
+- (void)loadView
+{
+    YVItunesDisplayView *view = [[YVItunesDisplayView alloc] init];
+    self.view = view;
+}
+
+- (void)viewDidLoad
+{
+    self.title = NSLocalizedString(@"Itunes Songs", nil);
+}
 
 @end

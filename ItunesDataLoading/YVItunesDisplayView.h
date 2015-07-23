@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "YVBaseView.h"
+#import "YVTableViewAdapter.h"
 
-@interface YVItunesDisplayView : UIView
+@interface YVItunesDisplayView : YVBaseView
+
+@property (strong, nonatomic) IBOutlet YVTableViewAdapter *tableAdapter;
 
 @end

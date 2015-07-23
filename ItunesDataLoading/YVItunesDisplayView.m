@@ -8,6 +8,17 @@
 
 #import "YVItunesDisplayView.h"
 
+@interface YVItunesDisplayView ()
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@end
+
 @implementation YVItunesDisplayView
+
+- (void)awakeFromNib
+{
+    
+}
 
 @end

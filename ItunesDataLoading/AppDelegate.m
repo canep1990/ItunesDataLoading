@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "YVItunesDisplayViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +16,17 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    YVItunesDisplayViewController *mainController = [[YVItunesDisplayViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainController];
+    self.window.rootViewController = navigationController;
+    
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
