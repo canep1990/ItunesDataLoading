@@ -6,17 +6,17 @@
 //  Copyright (c) 2015 Юрий Воскресенский. All rights reserved.
 //
 
-#import "YVItunesSongsLoader.h"
+#import "YVItunesSongsLoaderService.h"
 #import <AFNetworking/AFNetworking.h>
 #import "YVItunesModel.h"
 
-@interface YVItunesSongsLoader()
+@interface YVItunesSongsLoaderService()
 
 @property (nonatomic) BOOL loading;
 
 @end
 
-@implementation YVItunesSongsLoader
+@implementation YVItunesSongsLoaderService
 
 - (void)loadSongsWithOffset:(NSUInteger)offset
 {

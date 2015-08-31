@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /** Protocol. Notifies the receiver about the loading process */
-@protocol YVItunesSongsLoaderDelegate <NSObject>
+@protocol YVItunesSongsLoaderServiceDelegate <NSObject>
 
 - (void)didLoadDataArray:(NSArray *)array;
 - (void)didFailToLoadData:(NSString *)error;
@@ -17,10 +17,10 @@
 @end
 
 /** Class for loading itunes songs */
-@interface YVItunesSongsLoader : NSObject
+@interface YVItunesSongsLoaderService : NSObject
 
 /** Delegate property */
-@property (weak, nonatomic) id <YVItunesSongsLoaderDelegate> delegate;
+@property (weak, nonatomic) id <YVItunesSongsLoaderServiceDelegate> delegate;
 
 /** 
  Method for downloading the data

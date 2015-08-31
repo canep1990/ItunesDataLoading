@@ -8,16 +8,16 @@
 
 #import "YVItunesDisplayViewController.h"
 #import "YVItunesDisplayView.h"
-#import "YVItunesSongsLoader.h"
+#import "YVItunesSongsLoaderService.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 
 /** Value for default download offset */
 NSUInteger const kDefaultDownloadOffset = 20;
 static NSString * const kDefaultMessageTitle = @"Ошибка";
 
-@interface YVItunesDisplayViewController () <YVItunesSongsLoaderDelegate, YVItunesDisplayViewDelegate>
+@interface YVItunesDisplayViewController () <YVItunesSongsLoaderServiceDelegate, YVItunesDisplayViewDelegate>
 
-@property (strong, nonatomic) YVItunesSongsLoader *loader;
+@property (strong, nonatomic) YVItunesSongsLoaderService *loader;
 @property (nonatomic) NSUInteger offsetFactor;
 
 @end
@@ -34,7 +34,7 @@ static NSString * const kDefaultMessageTitle = @"Ошибка";
 - (void)viewDidLoad
 {
     self.title = NSLocalizedString(@"Itunes Songs", nil);
-    self.loader = [[YVItunesSongsLoader alloc] init];
+    self.loader = [[YVItunesSongsLoaderService alloc] init];
     self.loader.delegate = self;
     self.offsetFactor = 1;
     [self loadData];
